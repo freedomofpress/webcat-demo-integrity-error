@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WEBCAT Integrity Test Page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WEBCAT Integrity Test Page">
+</head>
+<body>
+  <article>
+    <h2>Blocking with error page:</h2>
+    <ul>
+      <li><a href="./corrupted-script/">Corrupted Script</a></li>
+      <li><a href="./corrupted-html/">Corrupted HTML</a></li>
+      <li><a href="./corrupted-image/">Corrupted Image</a></li>
+      <li><a href="./corrupted-css/">Corrupted CSS</a></li>
+      <li><a href="./corrupted-font/">Corrupted Font</a></li>
+      <li><a href="./corrupted-csp/">Corrupted Content Security Policy</a></li>
+      <li><a href="./forbidden-redirect/">Forbidden Redirect Header</a></li>
+      <li><a href="./forbidden-link-header/">Forbidden Link Header</a></li>
+    </ul>
+
+    <h2>Blocking in the background without error page:</h2>
+    <ul>
+      <li><a href="./corrupted-wasm/">Corrupted WASM</a></li>
+      <li><a href="./corrupted-worker/">Corrupted Worker</a></li>
+    </ul>
+  </article>
+</body>
+</html>
