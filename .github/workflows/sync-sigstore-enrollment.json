@@ -1,0 +1,23 @@
+name: Sync Sigstore Enrollment
+
+on:
+  schedule:
+    # Daily at 03:00 UTC
+    - cron: "0 3 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  sync:
+    permissions:
+      contents: write
+      pull-requests: write
+
+    uses: freedomofpress/webcat-cli/.github/workflows/sigstore-enrollment-sync.yml@main
+
+    with:
+      source-repository-uri: "https://github.com/${{ github.repository }}"
+      source-repository-ref: "${{ github.ref }}"
+      max_age: "15552000"
+
+
