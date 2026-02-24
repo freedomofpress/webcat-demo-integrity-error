@@ -1,14 +1,14 @@
 /*
-  Content-Security_policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self';
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self';
 
 /corrupted-csp/*
-  Content-Security_policy: default-src 'none'; script-src 'unsafe-eval' 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self';
+  Content-Security-Ppolicy: default-src 'none'; script-src 'unsafe-eval' 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self';
 
 
 /forbidden-redirect/*
-  Content-Security_policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self';
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self';
   Location: https://webcat.tech/
 
 /forbidden-link-header/*
-  Content-Security_policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self';
+  Content-Security-Policy: default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self';
   Link: <style.css>; rel=stylesheet; media=all
