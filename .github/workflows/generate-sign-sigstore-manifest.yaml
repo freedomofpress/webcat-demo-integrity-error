@@ -30,7 +30,8 @@ jobs:
             corrupted-worker \
             forbidden-link-header \
             forbidden-redirect \
-            index.html
+            index.html \
+            dist/
 
       # Optional sanity check
       - name: Show dist contents
