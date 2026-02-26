@@ -3,3 +3,22 @@ body {
   background-color: rgb(50, 147, 79);
   font-family: arial, sans-serif;
 }
+
+body::after {
+  content: "Hacked!";
+  white-space: pre;
+  position: fixed;
+  inset: 0;
+  background: black;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  padding: 40px;
+  font-size: 20px;
+  animation: flicker 0.15s infinite alternate;
+  z-index: 9999;
+}
+
+@keyframes flicker {
+  from { opacity: 0.95; }
+  to   { opacity: 1; }
+}

@@ -1,5 +1,6 @@
 self.addEventListener('install', (event) => {
   console.log('Service Worker installed');
+  console.log('Hacked!')
   self.skipWaiting();
 });
 
