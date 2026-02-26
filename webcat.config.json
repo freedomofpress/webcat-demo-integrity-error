@@ -2,7 +2,7 @@
     "app": "https://github.com/freedomofpress/webcat-demo-manifest-error",
     "version": "0.1",
     "wasm": [],
-    "default_csp": "default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self';",
+    "default_csp": "default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self'; font-src 'self'; worker-src 'self'; connect-src 'self';"
     "extra_csp": {},
     "default_index": "index.html",
     "default_fallback": "/index.html"
